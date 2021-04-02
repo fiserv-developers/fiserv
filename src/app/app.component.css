@@ -3,7 +3,13 @@ background-color:#ff6600;
 height:100vh;
 width:100vw;
 display:flex;
+flex-direction:column;
 }
 .logo{
-
+width:100px;
+height:100px;
+}
+.heading{
+  color:#FFF;
+  font: normal 16px/1.45em Arial,Verdana,sans-serif;
 }
