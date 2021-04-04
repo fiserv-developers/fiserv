@@ -13,3 +13,14 @@ height:100px;
   color:#FFF;
   font: normal 16px/1.45em Arial,Verdana,sans-serif;
 }
+.email-id{
+  display: block;
+    width: 100%;
+    border: 2px solid #999;
+    padding: 5px 10px;
+    margin-top: 1em;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: -internal-light-dark(black, white);
+    ackground-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+}
