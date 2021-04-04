@@ -1,18 +1,24 @@
 <div class="container">
-  <div class="logo">
+  <div class="innerContainer">
+    <div class="logo">
 
-    <img src="https://www.fiserv.com/content/dam/fiserv-ent/final-files/logos/fiserv-logo/Fiserv_White_Logo_0121.svg" alt="Fiserv">
-  </div>
+      <img src="https://www.fiserv.com/content/dam/fiserv-ent/final-files/logos/fiserv-logo/Fiserv_White_Logo_0121.svg" alt="Fiserv">
+    </div>
 
-  <div class="heading">
-    Dev Connect
-  </div>
+    <div class="heading">
+      Dev Connect
+    </div>
 
-  <div class="form-caontainer">
-    <form>
-      <input placeholder="mail address..." class="input">
-      <input placeholder="Intrested technologies..." class="input">
-    </form>
+    <div class="form-caontainer" *ngIf="showForm">
+      <form>
+        <input placeholder="mail address..." class="input">
+        <input placeholder="Intrested technologies..." class="input">
+      </form>
+      <div class="join-btn" (click)="onJoin()">
+        <div>Join
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!showForm"> Thanks for joining . Let's connect soon</div>
   </div>
-  <div class="join-btn">Join</div>
 </div>

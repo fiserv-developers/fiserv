@@ -7,6 +7,7 @@ import emailjs from "emailjs-com";
 })
 export class AppComponent {
   name = "Angular " + VERSION.major;
+  showForm: boolean = true;
   // ngOnInit() {
   //   if (navigator.geolocation) {
   //     navigator.geolocation.getCurrentPosition(function(position) {
@@ -27,4 +28,7 @@ export class AppComponent {
   //     });
   //   }
   // }
+  onJoin() {
+    showForm = false;
+  }
 }
