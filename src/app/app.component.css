@@ -1,3 +1,6 @@
+body {
+  background-color: #ff6600;
+}
 .container {
   background-color: #ff6600;
   height: 100vh;
@@ -5,6 +8,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 2px;
+  font: normal 16px/1.45em Arial, Verdana, sans-serif;
 }
 .logo {
   width: 100px;
@@ -12,20 +16,28 @@
 }
 .heading {
   color: #fff;
-  font: normal 16px/1.45em Arial, Verdana, sans-serif;
+
   font-size: 18px;
 }
 .form-caontainer {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .input {
   border-radius: 4px;
   border: 2px solid #999;
   padding: 5px 10px;
   margin-top: 1em;
+  width: 70%;
 }
 .input:focus {
-  border: 2px solid #999;
+  border: none;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.join-btn {
+  padding: 7px;
+  font-size: 13px;
+  color: #333;
+  background-color: #fff;
 }
